@@ -5,40 +5,51 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>combinator</title>
    <style>
-p::first-letter {
-  color: #ff0000;
-  font-size: large;
-}
-div + h3 {
-  background-color: green;
-}
-a{
-   color:blue;
-   
-}
+      body{
+         background-color: rgba(244, 234, 242, 0.5);
+      }
+      p::first-letter {
+         color: #ff0000;
+         font-size: large;
+      }
+      .color + h3 {
+         background-color: green;
+      }
+      div ul li:first-child a {
+      color: blue;
+    }
+    a {
+      color: rgba(21, 96, 245, 1);
+      text-decoration: none;
+    }
+    a:visited {
+      color: purple;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .links li {
+      color: rgba(236, 125, 177, 1);
+    }
 
 </style>
 </head>
 <body>
- <h1>Zudio</h1>
-   <p><b>Zudio is a fast-fashion  ::first-letter pseudo-element to add a special effect to the first 
-character of a text.retail brand offering trendy,</b> affordable clothing and accessories for young shoppers. It focuses on contemporary styles,seasonal collections and value-for-money pieces that make it easy to stay fashionable without spending a lot.</p>
-   <p><b>Zudio's collections span casual everyday wear, seasonal trend drops, party and work-ready outfits, denim and wardrobe basics, plus </b>accessories. Each collection focuses on current trends, easy styling and affordable pricing, with regular new arrivals and capsule edits for each season.</p>
+   <section>
+      <h1>Zudio</h1>
+      <p><b>Zudio is a fast-fashion  ::first-letter pseudo-element to add a special effect to the first.character of a text.retail brand offering trendy,</b> affordable clothing and accessories for young shoppers. It focuses on contemporary styles,seasonal collections and value-for-money pieces that make it easy to stay fashionable without spending a lot.</p>
+      <p><b>Zudio's collections span casual everyday wear, seasonal trend drops, party and work-ready outfits, denim and wardrobe basics, plus </b>accessories. Each collection focuses on current trends, easy styling and affordable pricing, with regular new arrivals and capsule edits for each season.</p>
+      </section>
    <div class="color">
       <h3>Mens session</h3>
    </div>
-      <h3>Womens session</h3>
-
-      <div>
-         <ul>
-            <li><a href="https://www.zudio.com/">link 1</a></li>
-            <li><a href="https://www.zudio.com/collections/women">link2</a></li>
-            <li><a href="https://www.zudio.com/collections/men">link 3</a></li>
-      
-
-         </ul>
-      </div>
-
- </div>
+   <h3>Womens session</h3>
+   <div class="links">
+      <ul>
+         <li><a href="https://www.zudio.com/">first link</a></li>
+         <li><a href="https://www.zudio.com/collections/women">second link</a></li>
+         <li><a href="https://www.zudio.com/collections/men">third link </a></li><br>
+      </ul>
+   </div>
 </body>
 </html>
